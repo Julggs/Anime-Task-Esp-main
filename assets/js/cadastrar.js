@@ -9,9 +9,11 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
     let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
     
     const tarefa = {
+        id: Date.now(),
         Titulo: document.querySelector("#nome").value,
         Descricao: document.querySelector("#descricao").value,
-        Episodios: document.querySelector("#episodios").value
+        Episodios: document.querySelector("#episodios").value,
+        Concluida: false
     }
 
     tarefas.push(tarefa)
