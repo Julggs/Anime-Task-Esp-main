@@ -13,14 +13,14 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
         Titulo: document.querySelector("#nome").value,
         Descricao: document.querySelector("#descricao").value,
         Episodios: document.querySelector("#episodios").value,
-        Concluida: false
+        concluida: false
     }
 
     tarefas.push(tarefa)
 
     localStorage.setItem("tarefas", JSON.stringify(tarefas))
     window.location.href="index.html"
-
+    calcularEstatisticas()
 })
 
 function convHoras(duracaoEmEpisodios) {
@@ -43,3 +43,4 @@ function convHoras(duracaoEmEpisodios) {
     resultadoElement.textContent = `Tempo estimado de ${duracaoConvertida}`;
   }
   document.getElementById('episodios').addEventListener('input', calcularDuracao);
+

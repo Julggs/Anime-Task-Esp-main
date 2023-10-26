@@ -10,7 +10,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/carregar.js" defer></script>
     <script src="./assets/js/apagar.js" defer></script>
-    <script src="./assets/js/concluir.js"></script>
+    <script src="./assets/js/concluir.js" ></script>
+    <script src="./assets/js/dashboard.js" defer></script>
 
     <title>.: Anime Task :.</title>
 </head>
@@ -27,6 +28,34 @@
       </nav>
 
       <main class="container">
+
+        <div class="row">
+          <div class="col s12 m6 l3">
+            <div class="card-panel center white-text #e57373 red lighten-2">
+              <h3 id="qtde-pendente">0</h3>
+              <span>Tarefas Pendentes</span>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel center white-text #a5d6a7 green lighten-3">
+              <h3 id="qtde-concluida">0</h3>
+              <span>Tarefas Concluidas</span>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel center white-text #b71c1c #4dd0e1 cyan lighten-2">
+              <h3 id="total-episodios">0</h3>
+              <span>Episodios total</span>
+            </div>
+          </div>
+          <div class="col s12 m6 l3">
+            <div class="card-panel center white-text #90caf9 blue lighten-3">
+              <h3 id="meus-episodios">0</h3>
+              <span>Episodios Assistidos</span>
+            </div>
+          </div>
+        </div>
+
         <h4>Lista de Animes</h4>
         <div class="row" id="lista-tarefas">
 
